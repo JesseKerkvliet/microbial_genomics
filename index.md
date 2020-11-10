@@ -1,1 +1,2 @@
-# Hello World!
+# Exercise Bacterial Genomics and Bioinformatics
+
