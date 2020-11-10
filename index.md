@@ -18,7 +18,7 @@ To find antibbiotic resistance genes (ARGs), we will use the ResFinder database.
 To use this database, it's important to know what species we're dealing with. To get this information, open the .fasta file in the data folder, [or open this link in a new tab](/data/assembly_1.fasta)
 
 ### BLAST
-The easiest way to find out what species is in your WGS assembly, is to use BLAST. BLAST is an algorithm often used to compare a sequence of interest (query) with sequences (DNA, RNA or peptide) in a database. In this case, the database is the nucleotide database of the NCBI, containing a vast amount of sequence data from many different sources. To use BLAST, go to [this link](blast.ncbi.nlm.nih.gov/Blast.cgi). Choose "Nucleotide BLAST". In the webform, enter one of the contigs from the assembly file *(hint for faster results: assembly files are ordered from long to short sequences)*. Next, click the "BLAST" button and wait for the BLAST run to be completed.
+The easiest way to find out what species is in your WGS assembly, is to use BLAST. BLAST is an algorithm often used to compare a sequence of interest (query) with sequences (DNA, RNA or peptide) in a database. In this case, the database is the nucleotide database of the NCBI, containing a vast amount of sequence data from many different sources. To use BLAST, go to [this link](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Choose "Nucleotide BLAST". In the webform, enter one of the contigs from the assembly file *(hint for faster results: assembly files are ordered from long to short sequences)*. Next, click the "BLAST" button and wait for the BLAST run to be completed.
 
 4. **Which species is in our samples?**
 5. **Is there any functional information on the contig you chose? (e.g. a protein match)**
