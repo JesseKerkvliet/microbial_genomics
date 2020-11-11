@@ -3,8 +3,17 @@
 ## Getting started
 This is the bioinformatics exercise for the lecture "Whole Genome Sequencing and bioinformatics". First, download the data using the .zip download at the top of the page. In the zip file you'll find a folder called 'data'. This is what you're going to need during this exercise.
 
+## Background
+The goal of this exercise is to give you a feel for the kind of tools you can use to answer biological questions using Whole Genome Sequencing (WGS). Usually, bioinformatics is done using a remote computer (like an HPC) in a commandline interface. However, due to time constraints, we will only use webtools for this exercise.   
+### The experiment
+For an antibiotic surveilance experiment, the genome of multiple samples of several species has been sequenced.You are tasked with finding out which antibiotic resistance genes are present in four samples of one species, and if they are located on plasmids that can make spreading of the genes throughout the population possible. Some of the samples were mislabeled after sequencing, so although your sample says *"S. aureus"* you will need to make sure that this is correct. 
+Before you continue, think about the following questions:
+
+1. **Can we infer antibiotic resistance from the whole genome only?**
+2. **Can we infer a gene being located on a plasmid with whole genome only?**
+
 ## Quality Control
-Whole Genome Sequencing (WGS) produces a wealth of data that needs careful processing by specialized software in order to be used to give insights in biological questions. The first step after sequencing reads are provided by the sequencer, is to get an idea of the overall quality of the data. To do this, we usually generate a quality report using the tool FastQC. In the /data/ folder, you'll find a .html file **(fastqc_report.html)**. Open this file in your web browser or [open this link in a new tab](/data/fastqc_report.html)
+WGS produces a wealth of data that needs careful processing by specialized software in order to be used to give insights in biological questions. The first step after sequencing reads are provided by the sequencer, is to get an idea of the overall quality of the data. To do this, we usually generate a quality report using the tool FastQC. In the /data/ folder, you'll find a .html file **(fastqc_report.html)**. Open this file in your web browser or [open this link in a new tab](/data/fastqc_report.html)
 Using this report, answer the following questions:
 
 1. **What kind of sequencing technique was used in this sample?**
@@ -36,12 +45,14 @@ Click while holding the control key to add to your selection. Next, select the s
 
 6. **Which antibiotic resistance phenotypes are predicted for the sample?**
 7. **On which contig is the resistance gene located?**
-8. **Are any of the hits found on a plasmid?**
-9. **The names of the contigs between samples are the same: NODE_[number]\_length\_[number]\_cov\_[number]. Are contigs with the same name the same contig between samples?**
+8. **Are any of the hits originating from a plasmid?**
+9. **The names of the contigs between samples are the same: NODE_[number]\_length\_[number]\_cov\_[number]. Are contigs with the same name in different files the same contig?**
 
-One of the results that shows up often in these assemblies is the ampicillin resistance gene *blaTEM-1B*. This gene encodes a beta-lactamase, providing resistance against beta-lactam-based antibiotics. The gene is usually located on a plasmid. However, ResFinder only shows a hit with the *blaTEM-1B* gene, not with the genetic context. We are therefore not sure that this gene is located on a plasmid. To check if this is the case, we return to [BLAST](blast.ncbi.nlm.nih.gov/Blast.cgi). Open one of your assembly files in a text editor and copy the contig that contains the *blaTEM-1B* gene according to ResFinder. Go back to BLAST and choose blastn once more. In the entry field, paste the contig you chose and start the tool. 
+## Plasmids
+One of the results that shows up often in these samples is the ampicillin resistance gene *blaTEM-1B*. This gene encodes a beta-lactamase, providing resistance against beta-lactam-based antibiotics. According to the ResFinder hit, this is gene is usually located on a plasmid. We want to know if this is the case in our samples. ResFinder only shows a hit with the *blaTEM-1B* gene, not with the genetic context. We are therefore not sure that this gene is located on a plasmid in our sample. To check if this is the case, we return to [BLAST](blast.ncbi.nlm.nih.gov/Blast.cgi). Open one of your assembly files in a text editor and copy the contig that contains the *blaTEM-1B* gene according to ResFinder. Go back to BLAST and choose blastn once more. In the entry field, paste the contig you chose and start the tool. 
 
 10. **Is the contig a plasmid? How do you know?**
 11. **Is the sequence your contig matches to the same length as your contig? If not, what could be an explanation for that?**
 
-
+## Answers
+The answers to these questions will be discussed during the lecture (if time allows it), and will be uploaded [here] after the lecture.
