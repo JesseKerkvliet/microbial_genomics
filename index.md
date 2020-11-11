@@ -33,6 +33,7 @@ Now that we know which species we have in our samples, we can use the species-sp
 Click while holding the control key to add to your selection. Next, select the species you found earlier in the drop-down menu. Upload one of your files using the "Isolate files" button. Upload one and click upload. *Note: uploading all 4 files at the same time doesn't work, so repeat this step for all 4 assemblies*
 
 **For each of the four files:**
+
 6. **Which antibiotic resistance phenotypes are predicted for the sample?**
 7. **On which contig is the resistance gene located?**
 8. **Are any of the hits found on a plasmid?**
