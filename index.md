@@ -4,7 +4,7 @@
 This is the bioinformatics exercise for the lecture "Whole Genome Sequencing and bioinformatics". First, download the data using the .zip download at the top of the page. In the zip file you'll find a folder called 'data'. This is what you're going to need during this exercise.
 
 ## Background
-The goal of this exercise is to give you a feel for the kind of tools you can use to answer biological questions using Whole Genome Sequencing (WGS). Usually, bioinformatics is done using a remote computer (like an HPC) in a commandline interface. However, due to time constraints, we will only use webtools for this exercise.   
+The goal of this exercise is to give you a feel for the kind of tools you can use to answer biological questions using Whole Genome Sequencing (WGS). Usually, bioinformatics is done using a remote computer (usually a powerful specialized server) in a commandline interface. However, due to time constraints, we will only use webtools for this exercise.   
 ### The experiment
 For an antibiotic surveilance experiment, the genome of multiple samples of several species has been sequenced.You are tasked with finding out which antibiotic resistance genes are present in four samples of one species, and if they are located on plasmids that can make spreading of the genes throughout the population possible. Some of the samples were mislabeled after sequencing, so although your sample says *"S. aureus"* you will need to make sure that this is correct. 
 Before you continue, think about the following questions:
