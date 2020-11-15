@@ -24,7 +24,7 @@ Using this report, answer the following questions:
 After genome assembly, which is too computationally demanding to do on a web service, contigs are annotated to shed light on the function of the genetic structures on those contigs. In this exercise you will use four assembled genomes to find genes associated with antibiotic resistance and the genetic context in which these genes are.
 
 To find antibbiotic resistance genes (ARGs), we will use the ResFinder database. This database is an important database with ARGs per species. As of August 2020, this database contains 2690 ARGs that are curated by experts. This number is still growing. 
-To use this database, it's important to know what species we're dealing with. To get this information, open the .fasta file in the data folder, [or open this link in a new tab](/data/assembly_1.fasta)
+To use this database, it's important to know what species we're dealing with. To get this information, open the .fasta file in the data folder, [or open this link in a new tab](/data/GCA_007998085.1_ASM799808v1.fasta)
 
 ### BLAST
 The easiest way to find out what species is in your WGS assembly, is to use BLAST. BLAST is an algorithm often used to compare a sequence of interest (query) with sequences (DNA, RNA or peptide) in a database. In this case, the database is the nucleotide database of the NCBI, containing a vast amount of sequence data from many different sources. To use BLAST, go to [this link](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Choose "Nucleotide BLAST". In the webform, enter one of the contigs from the assembly file *(hint for faster results: assembly files are ordered from long to short sequences)*. Next, click the "BLAST" button and wait for the BLAST run to be completed.
