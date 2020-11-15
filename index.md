@@ -24,8 +24,7 @@ Using this report, answer the following questions:
 After genome assembly, which is too computationally demanding to do on a web service, contigs are annotated to shed light on the function of the genetic structures on those contigs. In this exercise you will use four assembled genomes to find genes associated with antibiotic resistance and the genetic context in which these genes are.
 
 To find antibbiotic resistance genes (ARGs), we will use the ResFinder database. This database is an important database with ARGs per species. As of August 2020, this database contains 2690 ARGs that are curated by experts. This number is still growing. 
-To use this database, it's important to know what species we're dealing with. To get this information, open the .fasta file in the data folder, [or open this link in a new tab](/data/GCA_007998085.1_ASM799808v1.fasta)
-
+To use this database, it's important to know what species we're dealing with. To get this information, open the .fasta file in the data folder.
 ### BLAST
 The easiest way to find out what species is in your WGS assembly, is to use BLAST. BLAST is an algorithm often used to compare a sequence of interest (query) with sequences (DNA, RNA or peptide) in a database. In this case, the database is the nucleotide database of the NCBI, containing a vast amount of sequence data from many different sources. To use BLAST, go to [this link](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Choose "Nucleotide BLAST". In the webform, enter one of the contigs from the assembly file *(hint for faster results: assembly files are ordered from long to short sequences)*. Next, click the "BLAST" button and wait for the BLAST run to be completed.
 
@@ -34,9 +33,9 @@ The easiest way to find out what species is in your WGS assembly, is to use BLAS
 
 ### ResFinder
 Now that we know which species we have in our samples, we can use the species-specific datasets in the ResFinder database. Go to [the ResFinder website](https://cge.cbs.dtu.dk/services/ResFinder/). Click the "acquired antimicrobial resistance" checkbox and select the following antibiotics: 
-- Ampicilin
+- Beta-lactam
 - Colistilin
-- Tetracycling
+- Tetracyclin
 - Aminoglycoside
 
 Click while holding the control key to add to your selection. Next, select the species you found earlier in the drop-down menu. Upload one of your files using the "Isolate files" button. Upload one and click upload. *Note: uploading all 4 files at the same time doesn't work, so repeat this step for all 4 assemblies*
@@ -46,7 +45,7 @@ Click while holding the control key to add to your selection. Next, select the s
 6. **Which antibiotic resistance phenotypes are predicted for the sample?**
 7. **On which contig is the resistance gene located?**
 8. **Are any of the hits originating from a plasmid?**
-9. **The names of the contigs between samples are the same: NODE_[number]\_length\_[number]\_cov\_[number]. Are contigs with the same name in different files the same contig?**
+9. **The names of the contigs between samples are the same: NODE_[number]\_length\_[number]\_cov\_[number]. Are contigs that have the same name in different samples also the same sequence?**
 
 ## Plasmids
 One of the results that shows up often in these samples is the ampicillin resistance gene *blaTEM-1B*. This gene encodes a beta-lactamase, providing resistance against beta-lactam-based antibiotics. According to the ResFinder hit, this is gene is usually located on a plasmid. We want to know if this is the case in our samples. ResFinder only shows a hit with the *blaTEM-1B* gene, not with the genetic context. We are therefore not sure that this gene is located on a plasmid in our sample. To check if this is the case, we return to [BLAST](blast.ncbi.nlm.nih.gov/Blast.cgi). Open one of your assembly files in a text editor and copy the contig that contains the *blaTEM-1B* gene according to ResFinder. Go back to BLAST and choose blastn once more. In the entry field, paste the contig you chose and start the tool. 
