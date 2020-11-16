@@ -76,7 +76,7 @@ Click while holding the control key to add to your selection. Next, select the s
 | GCA_007998085.1_ASM799808v1.fna | Ampicilin (beta-lactam), colistin, tetracyclin, several more | yes, yes, yes|
 | GCA_013371745.1_ASM1337174v1.fna | Ampicilin (beta-lactam), colistin, tetracyclin, several more | yes, yes, yes|
 
-** Finding out if a hit is a plasmid, is done by clicking the "acession link" like [AY458016](https://www.ncbi.nlm.nih.gov/nuccore/AY458016) which at the top says it's a plasmid.**
+**Finding out if a hit is a plasmid, is done by clicking the "acession link" like [AY458016](https://www.ncbi.nlm.nih.gov/nuccore/AY458016) which at the top says it's a plasmid.**
 
 ## Plasmids
 One of the results that shows up often in these samples is the ampicillin resistance gene *blaTEM-1B*. This gene encodes a beta-lactamase, providing resistance against beta-lactam-based antibiotics. According to the ResFinder hit, this is gene is usually located on a plasmid. We want to know if this is the case in our samples. ResFinder only shows a hit with the *blaTEM-1B* gene, not with the genetic context. We are therefore not sure that this gene is located on a plasmid in our sample. To check if this is the case, we return to [BLAST](blast.ncbi.nlm.nih.gov/Blast.cgi). Open one of your assembly files in a text editor and copy the contig that contains the *blaTEM-1B* gene according to ResFinder. Go back to BLAST and choose blastn once more. In the entry field, paste the contig you chose and start the tool. 
