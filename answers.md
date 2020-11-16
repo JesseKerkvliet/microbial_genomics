@@ -65,15 +65,29 @@ Click while holding the control key to add to your selection. Next, select the s
 6. **Which antibiotic resistance phenotypes are predicted for the sample?**
 7. **On which contig is the resistance gene located?**
 8. **Are any of the hits originating from a plasmid?**
-
 9. **The names of the contigs between samples are the same: NODE_[number]\_length\_[number]\_cov\_[number]. Are contigs that have the same name in different samples also the same sequence?**
 
 **A:** No, the NODE numbers are incremental per sample, so the assembly tool starts at 1 for each sample. The numbers are not comparable between samples.
 
+| Assembly file | Resistances | Plasmid? |
+|---|---|---|
+
+| GCA_013372325.1_ASM1337232v1.fna | Ampicilin (beta-lactam) | yes |
+| GCA_013899185.1_ASM1389918v1.fna | Ampicilin (beta-lactam), tetracyclin| yes,yes |
+| GCA_007998085.1_ASM799808v1.fna | Ampicilin (beta-lactam), colistin, tetracyclin, several more | yes, yes, yes|
+| GCA_013371745.1_ASM1337174v1.fna | Ampicilin (beta-lactam), colistin, tetracyclin, several more | yes, yes, yes|
+
+** Finding out if a hit is a plasmid, is done by clicking the "acession link" like [AY458016](https://www.ncbi.nlm.nih.gov/nuccore/AY458016) which at the top says it's a plasmid.**
+
 ## Plasmids
 One of the results that shows up often in these samples is the ampicillin resistance gene *blaTEM-1B*. This gene encodes a beta-lactamase, providing resistance against beta-lactam-based antibiotics. According to the ResFinder hit, this is gene is usually located on a plasmid. We want to know if this is the case in our samples. ResFinder only shows a hit with the *blaTEM-1B* gene, not with the genetic context. We are therefore not sure that this gene is located on a plasmid in our sample. To check if this is the case, we return to [BLAST](blast.ncbi.nlm.nih.gov/Blast.cgi). Open one of your assembly files in a text editor and copy the contig that contains the *blaTEM-1B* gene according to ResFinder. Go back to BLAST and choose blastn once more. In the entry field, paste the contig you chose and start the tool. 
 
+**A: Let's use the NODE_27_length_1916_cov_27.050677 contig from GCA_013899185.1_ASM1389918v1.fasta**
+
 10. **Is the contig a plasmid? How do you know?**
+
+**A:**The name of the hit says it's a plasmid. This isn't always true for all contigs, though
+
 11. **Is the sequence your contig matches to the same length as your contig? If not, what could be an explanation for that?**
 
 **A:** The contig is not assembled on the full plasmid-level. So there are likely other contigs in the assembly that would match this plasmid that should belong together, but errors or tangles in the assembly graph prevented that.
