@@ -54,4 +54,4 @@ One of the results that shows up often in these samples is the ampicillin resist
 11. **Is the sequence your contig matches to the same length as your contig? If not, what could be an explanation for that?**
 
 ## Answers
-The answers to these questions will be discussed during the lecture (if time allows it), and will be uploaded [here] after the lecture.
+The answers to these questions will be discussed during the lecture (if time allows it), and will be uploaded [here](answers.md) after the lecture.
