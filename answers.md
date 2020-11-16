@@ -71,7 +71,6 @@ Click while holding the control key to add to your selection. Next, select the s
 
 | Assembly file | Resistances | Plasmid? |
 |---|---|---|
-
 | GCA_013372325.1_ASM1337232v1.fna | Ampicilin (beta-lactam) | yes |
 | GCA_013899185.1_ASM1389918v1.fna | Ampicilin (beta-lactam), tetracyclin| yes,yes |
 | GCA_007998085.1_ASM799808v1.fna | Ampicilin (beta-lactam), colistin, tetracyclin, several more | yes, yes, yes|
